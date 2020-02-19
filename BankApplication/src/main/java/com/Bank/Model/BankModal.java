@@ -14,23 +14,10 @@ public class BankModal {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
-	@NotBlank(message = "Please Enter Your Name : ")
-	@Size(min = 10,max =50,message = "Enter your Full Name.")
 	private String name;
-	
-	@NotBlank(message = "Enter Valid Address OR Native Address.")
 	private String address;
-	
-	@NotBlank(message = "Enter Your Mobile Number ")
-	@Size(min = 1,max = 10,message = "Enter Your Valid Phone Number.")
 	private Long pNumber;
-	
-	@Email(message = "Enter Valid Email Id.")
 	private String email;
-	
-	@NotBlank(message = "Enter Your Account")
-	@Size(min = 1,max = 10,message = "Enter Valid Account Number.")
 	private Long accountNo;
 	public Long getId() {
 		return id;
